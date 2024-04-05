@@ -1,0 +1,35 @@
+.leftNavLayout {
+  display: flex;
+  /* height: 100vh; */
+}
+
+.container {
+  padding-left: 2rem;
+  width: 15%;
+  transition: width 0.3s;
+  overflow-y: auto;
+}
+.container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  transition: margin-left 0.3s;
+}
+.content::-webkit-scrollbar {
+  width: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 40px;
+  }
+
+  .content {
+    /* width: 160px; */
+    margin-left: 0;
+  }
+}

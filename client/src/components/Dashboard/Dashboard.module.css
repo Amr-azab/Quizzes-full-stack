@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #f8f9fa;
+}
+
+.twoContainers {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}

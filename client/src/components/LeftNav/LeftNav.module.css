@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  background-color: #006572;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150px;
+  overflow-y: auto;
+  transition: width 0.3s;
+}
+
+.container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.title {
+  display: flex;
+  align-self: center;
+  color: white;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.links {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-top: auto;
+}
+.links div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.links div:hover {
+  background-color: white;
+  padding-right: 2rem;
+  color: #1ba9bc;
+}
+
+.links div svg {
+  padding-right: 0.5rem;
+}
+.links div.active {
+  background-color: white;
+
+  color: #1ba9bc;
+}
+
+.links div.active svg {
+  fill: #1ba9bc;
+}
+.activeLink {
+  color: #1ba9bc !important;
+}
+.customLink {
+  text-decoration: none;
+  color: white;
+}
+
+.customLink:hover {
+  color: #1ba9bc;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0px;
+    width: 60px;
+  }
+  .title {
+    font-size: 0.8rem;
+    padding-top: 0.7rem;
+    margin-bottom: 4rem;
+  }
+  .links {
+    font-size: 0.4rem;
+    gap: 2rem;
+  }
+
+  .links div {
+    margin-bottom: 1px;
+  }
+  .links div svg {
+    font-size: 0.6rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+  }
+}

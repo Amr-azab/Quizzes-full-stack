@@ -1,0 +1,134 @@
+.whatsDue {
+  border-radius: 5px;
+  margin: 1rem;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+h2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 1.2rem;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 0.4rem;
+}
+
+.item {
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: column;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(185, 185, 185, 0.2);
+}
+
+/* .item:not(:last-child) {
+  border-bottom: 1px solid rgba(185, 185, 185, 0.2);
+} */
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: black;
+}
+.course {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 1rem;
+  color: #979797;
+}
+
+.topic {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 1rem;
+  color: #979797;
+}
+
+.dueDate {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 1rem;
+  color: #979797;
+}
+.Loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust height as needed */
+}
+
+.Loader .MuiCircularProgress-root {
+  color: #1ba9bc; /* Set the color of the spinner */
+}
+
+.Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  font-size: 0.8rem;
+  color: #25b1b6;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.4rem;
+  background-color: white;
+  border: 1px solid #25b1b6;
+  margin-bottom: 0.4rem;
+}
+.Btn:hover {
+  transform: scale(0.9);
+  background-color: white;
+}
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .WhatsDueWord {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 0.4rem;
+  }
+  .whatsDue {
+    margin: 0;
+  }
+  .list {
+    margin: 0;
+  }
+  .item {
+    padding: 0.1rem;
+    margin: 0;
+  }
+  .title {
+    font-size: 0.4rem;
+    margin: 0rem;
+  }
+  .course {
+    font-size: 0.2rem;
+    padding: 0.1rem;
+    margin: 0rem;
+  }
+  .topic {
+    font-size: 0.2rem;
+    padding: 0.1rem;
+    margin: 0rem;
+  }
+  .dueDate {
+    font-size: 0.2rem;
+    padding: 0.1rem;
+    margin: 0rem;
+  }
+  .Btn {
+    width: 2rem;
+    font-size: 0.2rem;
+    padding: 0.1rem;
+  }
+}
